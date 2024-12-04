@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Registros</title>
+    <link rel="stylesheet" href="../css/cad_estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pesquisa de Registros</h1>
+    </header>
+    <main>
+        <form action="../scripts/pesquisa.php" method="POST">
+            <div class="campo">
+                <label for="txtnome">Nome:</label>
+                <input type="text" id="txtnome" name="txtnome" required>
+            </div>
+            <div class="botoes">
+                <input type="submit" class="btn-form" value="Pesquisar">
+                <input type="button" class="btn-form" value="Voltar" onclick="location.href='../index.html'">
+            </div>
+        </form>
+    </main>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 AppleSpace. Todos os direitos reservados.</p>
+            <div class="footer-icons">
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

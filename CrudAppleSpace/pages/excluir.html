@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir Registro</title>
+    <link rel="stylesheet" href="../css/excluir.css">
+</head>
+
+<body>
+    <header>
+        <h1>Excluir Registro</h1>
+    </header>
+
+    <main>
+        <form action="../scripts/excluir.php" method="POST">
+            <div class="campo">
+                <label for="codigo">Código do Registro:</label>
+                <input type="text" id="codigo" name="codigo" required>
+            </div>
+            <div class="botoes">
+                <input type="submit" class="btn-form" value="Excluir" name="excluir">
+                <input type="button" class="btn-form" value="Limpar" onclick="document.getElementById('codigo').value = ''">
+                <input type="button" class="btn-form" value="Voltar" onclick="location.href='../index.html'">
+                <input type="button" class="btn-form" value="Não se lembra o código, clique aqui" onclick="location.href = '../scripts/list.php'">
+            </div>
+        </form>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 AppleSpace. Todos os direitos reservados.</p>
+            <div class="footer-icons">
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
